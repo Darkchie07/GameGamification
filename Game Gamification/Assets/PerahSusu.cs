@@ -7,13 +7,14 @@ using TMPro;
 
 public class PerahSusu : MonoBehaviour
 {
-    [SerializeField] private Image SusuPenuh;
+    public Image SusuPenuh;
     public SusuJatuh susuJatuh;
     private float timer;
     public bool isCooldowm;
     public TMP_Text cooldownMessage;
     public Image kupon;
     public Sprite[] ListKupon;
+    public bool isDasar;
 
     public Image tetesanSusu;
     // Start is called before the first frame update
@@ -41,6 +42,7 @@ public class PerahSusu : MonoBehaviour
             var idx = Random.Range(0, ListKupon.Length);
             kupon.sprite = ListKupon[idx];
             SusuPenuh.fillAmount = 0;
+            susuJatuh.tujuan.localPosition = new Vector3(13, -875, 0);
         }
     }
 
@@ -52,7 +54,6 @@ public class PerahSusu : MonoBehaviour
             {
                 susuJatuh.gameObject.SetActive(true);
                 susuJatuh.isIsi = true;
-                StartCoroutine(IsiSusu());
                 isCooldowm = true;
             }
         }
@@ -63,12 +64,6 @@ public class PerahSusu : MonoBehaviour
         }
     }
 
-    private IEnumerator IsiSusu()
-    {
-        yield return new WaitForSeconds(2f);
-        SusuPenuh.fillAmount += 0.1f;
-    }
-    
     private IEnumerator TextMessage()
     {
         cooldownMessage.gameObject.SetActive(true);
