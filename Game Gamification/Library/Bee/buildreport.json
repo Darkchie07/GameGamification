@@ -1,0 +1,20 @@
+{
+"instructions_readme": "1) Open Chrome, 2) go to chrome://tracing, 3) click Load, 4) navigate to this file.",
+
+"traceEvents":[
+{ "pid": "Unity", "ph":"M", "name": "process_name", "args": {"name": "Unity"} },
+{ "pid": "Unity", "ph":"M", "name": "process_sort_index", "args": {"sort_index": -100} },
+{ "pid": "Unity", "tid": 1, "ph":"M", "name": "thread_name", "args": {"name": ""} },
+{ "pid": "Unity", "tid": 1,"ts": 11637311193.3,"dur": 10239912.9, "ph":"X", "name": "Build player"},
+{ "pid": "Unity", "tid": 1,"ts": 11637391760,"dur": 68142.8, "ph":"X", "name": "Preprocess Player"},
+{ "pid": "Unity", "tid": 1,"ts": 11637513565.1,"dur": 9994301.4, "ph":"X", "name": "Prepare For Build"},
+{}
+
+],
+"meta_datetime": "11/07/2022 22:46:33",
+"meta_command_line": "G:\\2021.3.0f1\\Editor\\Unity.exe -projectpath \"G:\\Latihan\\C# (Unity)\\GameGamification\\Game Gamification\" -useHub -hubIPC -cloudEnvironment production -licensingIpc LicenseClient-MTYP -hubSessionId ecafc9d0-5ead-11ed-9185-bb5bca8d2501 -accessToken du1GOLOFdfiQYw6skMZrZPP0KbIzuDKbT1mQI-bT7Bo011f",
+"meta_command_line_args": "G:\\2021.3.0f1\\Editor\\Unity.exe -projectpath G:\\Latihan\\C# (Unity)\\GameGamification\\Game Gamification -useHub -hubIPC -cloudEnvironment production -licensingIpc LicenseClient-MTYP -hubSessionId ecafc9d0-5ead-11ed-9185-bb5bca8d2501 -accessToken du1GOLOFdfiQYw6skMZrZPP0KbIzuDKbT1mQI-bT7Bo011f",
+"meta_user_name": "MTYP",
+"meta_os_version": "Microsoft Windows NT 10.0.22000.0",
+"meta_cpu_count": "4"
+}

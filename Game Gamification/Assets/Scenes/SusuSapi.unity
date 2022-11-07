@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -735,8 +735,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.89026, y: -684.9777}
-  m_SizeDelta: {x: 339.78, y: 517.361}
+  m_AnchoredPosition: {x: 0.000061035, y: -677}
+  m_SizeDelta: {x: 460, y: 460}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1142264162
 GameObject:
@@ -774,7 +774,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 18, y: -206.66}
+  m_AnchoredPosition: {x: 20, y: -205}
   m_SizeDelta: {x: 84.414, y: 84.414}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1142264164
@@ -864,8 +864,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 629.03, y: 388.4862}
+  m_AnchoredPosition: {x: 0, y: -90}
+  m_SizeDelta: {x: 963.042, y: 361.139}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1209750206
 MonoBehaviour:
@@ -996,10 +996,9 @@ MonoBehaviour:
   cooldownMessage: {fileID: 1774162807}
   kupon: {fileID: 1209750208}
   ListKupon:
-  - {fileID: 21300000, guid: e878d1d7ce081344f834fbcd2f5f9a1c, type: 3}
-  - {fileID: 21300000, guid: 77b942149c6ffa9499a56ad0a7d01353, type: 3}
-  - {fileID: 21300000, guid: 39b7b8f4b7ecbbe4ea9cc5f79d5cf0d5, type: 3}
-  - {fileID: 21300000, guid: 96f7539cf11314b44a84ad258fe13fb8, type: 3}
+  - {fileID: 21300000, guid: 139388198642da249aaac86ee9f454e4, type: 3}
+  - {fileID: 21300000, guid: a2d4853f44aa0e24c8d7afe61d325163, type: 3}
+  - {fileID: 21300000, guid: a3c2f50ab06e53941a74a1658e4767f8, type: 3}
   tetesanSusu: {fileID: 1142264164}
 --- !u!4 &1420087214
 Transform:
@@ -1517,7 +1516,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000011444, y: -670.9}
+  m_AnchoredPosition: {x: 0.000072971, y: -677}
   m_SizeDelta: {x: 460, y: 460}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1800502043

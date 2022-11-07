@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SusuSapi.unity
+    guid: 04f836f46c426064ab3e876181c445e0
   m_configObjects: {}

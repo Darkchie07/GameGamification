@@ -28,14 +28,14 @@ public class PerahSusu : MonoBehaviour
         if (isCooldowm)
         {
             timer += Time.deltaTime;
-            if (timer >= 1800)
+            if (timer >= 3)
             {
                 timer = 0;
                 isCooldowm = false;
             }
         }
 
-        if (SusuPenuh.fillAmount == 1)
+        if (SusuPenuh.fillAmount >= 0.7)
         {
             kupon.gameObject.SetActive(true);
             var idx = Random.Range(0, ListKupon.Length);
@@ -48,7 +48,7 @@ public class PerahSusu : MonoBehaviour
     {
         if (!isCooldowm)
         {
-            if (SusuPenuh.fillAmount != 1f && !susuJatuh.isIsi)
+            if (SusuPenuh.fillAmount != 0.7f && !susuJatuh.isIsi)
             {
                 susuJatuh.gameObject.SetActive(true);
                 susuJatuh.isIsi = true;
@@ -72,7 +72,7 @@ public class PerahSusu : MonoBehaviour
     private IEnumerator TextMessage()
     {
         cooldownMessage.gameObject.SetActive(true);
-        cooldownMessage.text = "Perah kembali dalam " + (int) ((1800 - timer)/60) + " menit";
+        cooldownMessage.text = "Perah kembali dalam " + (int) ((3 - timer)) + " detik";
         yield return new WaitForSeconds(2f);
         cooldownMessage.gameObject.SetActive(false);
     }
