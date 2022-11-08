@@ -26,7 +26,7 @@ public class SusuJatuh : MonoBehaviour
             if (Vector2.Distance(transform.position, tujuan.position) <= 0)
             {
                 isIsi = false;
-                perahSusu.isDasar = true;
+                perahSusu.SusuPenuh.fillAmount += 0.1f;
                 tujuan.position = new Vector3(tujuan.position.x, tujuan.position.y + 10, tujuan.position.x);
                 this.gameObject.transform.position = posisiAwal;
                 this.gameObject.SetActive(false);
@@ -35,14 +35,14 @@ public class SusuJatuh : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Batas"))
-        {
-            perahSusu.SusuPenuh.fillAmount += 0.1f;
-            isIsi = false;
-            this.gameObject.transform.position = posisiAwal;
-            this.gameObject.SetActive(false);
-        }
-    }
+    // private void OnTriggerEnter2D(Collider2D other)
+    // {
+    //     if (other.CompareTag("Batas"))
+    //     {
+    //         perahSusu.SusuPenuh.fillAmount += 0.1f;
+    //         isIsi = false;
+    //         this.gameObject.transform.position = posisiAwal;
+    //         this.gameObject.SetActive(false);
+    //     }
+    // }
 }

@@ -14,9 +14,6 @@ public class PerahSusu : MonoBehaviour
     public TMP_Text cooldownMessage;
     public Image kupon;
     public Sprite[] ListKupon;
-    public bool isDasar;
-
-    public Image tetesanSusu;
     // Start is called before the first frame update
     void Start()
     {
