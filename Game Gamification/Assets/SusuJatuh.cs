@@ -22,12 +22,12 @@ public class SusuJatuh : MonoBehaviour
     {
         if (isIsi)
         {
-            transform.position = Vector2.MoveTowards(transform.position, tujuan.position, 150 * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, tujuan.position, 250 * Time.deltaTime);
             if (Vector2.Distance(transform.position, tujuan.position) <= 0)
             {
                 isIsi = false;
                 perahSusu.SusuPenuh.fillAmount += 0.1f;
-                tujuan.position = new Vector3(tujuan.position.x, tujuan.position.y + 10, tujuan.position.x);
+                // tujuan.position = new Vector3(tujuan.position.x, tujuan.position.y + 10, tujuan.position.x);
                 this.gameObject.transform.position = posisiAwal;
                 this.gameObject.SetActive(false);
             }
