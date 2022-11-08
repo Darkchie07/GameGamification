@@ -11,6 +11,7 @@ public class SusuJatuh : MonoBehaviour
     private float timer;
     public Transform tujuan;
     public PerahSusu perahSusu;
+
     void Start()
     {
         posisiAwal = transform.position;
@@ -35,14 +36,13 @@ public class SusuJatuh : MonoBehaviour
         }
     }
 
-    // private void OnTriggerEnter(Collider other)
-    // {
-    //     if (other.CompareTag("Batas"))
-    //     {
-    //         Debug.Log("Nabrak");
-    //         isIsi = false;
-    //         this.gameObject.transform.position = posisiAwal;
-    //         this.gameObject.SetActive(false);
-    //     }
-    // }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Batas"))
+        {
+            isIsi = false;
+            this.gameObject.transform.position = posisiAwal;
+            this.gameObject.SetActive(false);
+        }
+    }
 }
