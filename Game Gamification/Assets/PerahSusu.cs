@@ -42,7 +42,7 @@ public class PerahSusu : MonoBehaviour
             var idx = Random.Range(0, ListKupon.Length);
             kupon.sprite = ListKupon[idx];
             SusuPenuh.fillAmount = 0;
-            susuJatuh.tujuan.localPosition = new Vector3(13, -875, 0);
+            susuJatuh.tujuan.localPosition = new Vector3(0, -185, 0);
         }
     }
 
@@ -60,7 +60,6 @@ public class PerahSusu : MonoBehaviour
         else
         {
             StartCoroutine(TextMessage());
-            
         }
     }
 
